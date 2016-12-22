@@ -1,5 +1,4 @@
-
-    function drag(ev) {
+function drag(ev) {
     ev.dataTransfer.setData('text', ev.target.id);
 }
 
@@ -36,3 +35,15 @@ ColorPicker(
     function (hex, hsv, rgb) {
         document.body.style.backgroundColor = hex;
     });
+
+// Foscam xmas-hue-cam 
+
+function reload() {
+   setTimeout('reloadImg("xmasCam")',100)
+};
+
+function reloadImg(id) { 
+   var obj = document.getElementById(id); 
+   var date = new Date(); 
+   obj.src = "http://xmascamurl.domain:port/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=XXXXXX&pwd=XXXXXXX&t=" + Math.floor(date.getTime()/100); 
+} 
