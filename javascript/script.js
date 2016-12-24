@@ -39,11 +39,11 @@ ColorPicker(
 // Foscam xmas-hue-cam 
 
 function reload() {
-   setTimeout('reloadImg("xmasCam")',100)
+    setTimeout('reloadImg("xmasCam")', 300)
 };
 
-function reloadImg(id) { 
-   var obj = document.getElementById(id); 
-   var date = new Date(); 
-   obj.src = "http://xmascamurl.domain:port/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=XXXXXX&pwd=XXXXXXX&t=" + Math.floor(date.getTime()/100); 
+function reloadImg(id) {
+    var obj = document.getElementById(id);
+    var date = new Date();
+    obj.src = "http://xmashue.hv58.nl:4000/videofeed?t=" + Math.floor(date.getTime() / 300);
 } 

@@ -44,15 +44,20 @@ html, body {
   display: inline-block;
 }
 
+#innertile3 {
+  text-align: center;
+  overflow: hidden;
+}
+
 #picker {
-            width: 200px;
-            height: 200px
-        }
+  width: 200px;
+  height: 200px
+}
         
-        #slide {
-            width: 30px;
-            height: 200px
-        }
+#slide {
+  width: 30px;
+  height: 200px
+}
 
 .wave {
   color: transparent;
